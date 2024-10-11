@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 export default function ChatbotPage(){
 
-    const baseUrl = "http://localhost:3000"
+    const baseUrl = "https://man-of-infinity.vercel.app/";
     useEffect(() => {
       const chatMessages = document.getElementById("chat-messages");
       chatMessages?.scrollTo({
