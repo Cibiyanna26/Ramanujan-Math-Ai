@@ -6,7 +6,7 @@ import Groq from "groq-sdk";
 
 const groq = new Groq({ apiKey: process.env.ORQ_TEXT_GENERATION_KEY });
 
-export async function getGroqChatCompletion(query: string) {
+async function getGroqChatCompletion(query: string) {
   return groq.chat.completions.create({
     messages: [
       {

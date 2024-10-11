@@ -7,6 +7,8 @@ import { useEffect, useState } from "react";
 
 
 export default function ChatbotPage(){
+
+    const baseUrl = "http://localhost:3000"
     useEffect(() => {
       const chatMessages = document.getElementById("chat-messages");
       chatMessages?.scrollTo({
@@ -41,7 +43,7 @@ export default function ChatbotPage(){
         }
 
         try{
-            const response = await fetch("/api/v1/", {
+            const response = await fetch(baseUrl+"/api/v1/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
