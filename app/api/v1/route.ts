@@ -3,7 +3,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
 import Groq from "groq-sdk";
-import { NextApiResponse } from "next";
 
 const groq = new Groq({ apiKey: process.env.ORQ_TEXT_GENERATION_KEY });
 
